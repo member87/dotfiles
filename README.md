@@ -5,7 +5,7 @@ Various configuration files for my ArchLinux setup.
 Using [YADM](https://yadm.io/) to manage dotfiles
 
 ## Window manager setup:
-- Config for both i3wm (sometimes use awesomewm)
+- i3wm (sometimes use awesomewm)
 - polybar
 - i3 resurect to restore i3 programs and layout
 - alacritty

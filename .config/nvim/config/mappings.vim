@@ -2,7 +2,7 @@
 nnoremap <A-p> <cmd>Telescope find_files<CR>
 
 " Toggle Terminal "
-nnoremap 			 <A-t> :ToggleTerm direction=float<CR>
+nnoremap 			 <A-t> :ToggleTerm<CR>
 
 " BarBar "
 " Move to previous/next

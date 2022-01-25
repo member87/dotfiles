@@ -1,0 +1,72 @@
+/**
+ * @name Custom CSS
+ * @description Custom CSS for better discord
+ * @author Member87
+ * @version 1.0.0
+ * @authorId 281791593017769984
+ */
+
+
+ :root {
+	--background-primary: #191919;
+	--background-secondary: #191919;
+	--background-tertiary: #262626;
+	--scrollbar-thin-thumb: #339441;
+	--scrollbar-auto-thumb: #339441;
+	--scrollbar-auto-track: #00000000;
+	--brand-experiment: #339441;
+	--interactive-normal: #FFF;
+	--interactive-hover: #FFF;
+	--interactive-active: #FFF;
+	--channeltextarea-background: #262626;
+	--channeltextarea-foregorund: #fff;
+	--background-secondary-alt: #262626;
+	--background-floating: #262626;
+	--background-accent: #339441;
+	--activity-card-background: #1c1d2b;
+	--elevation-low: #00FF00;
+	--background-modifier-selected: #339441;
+	--background-modifier-hover: #3394419c;
+	--background-modifier-active: #339441;
+	--text-muted: #aaa;
+	--background-mentioned: #33944117;
+	--background-mentioned-hover: #3394412e;
+
+
+}
+
+.unreadPillCapStroke-7rkHbg, #---new-messages-bar > :first-child {
+	color: #339441;
+	fill: #339441;
+}
+#---new-messages-bar, .unreadPill-2HyYtt {
+	border-color: #339441;
+	background-color: #339441;
+	margin-bottom: 2em !important;
+}
+
+.mentioned-xhSam7:before {
+
+	background-color: #339441;
+}
+
+.theme-dark .container-1D34oG, .theme-dark .footer-2gL1pp, .theme-dark .container-2cd8Mz {
+	background-color: #191919;
+} 
+
+.theme-dark .root-1gCeng {
+	background-color: #262626
+}
+
+span.roleColor-rz2vM0::after {
+    content: "";
+    background: currentColor;
+    width: 100%;
+    position: absolute;
+    opacity: 0.11;
+    left: 0;
+    top: 1px;
+    bottom: 1px;
+    border-radius: 10px;
+}
+ 

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+
+for path in ~/.mozilla/firefox/*-release/; do 
+		mkdir $path/chrome/ 2&>/dev/null
+    cp ~/.config/firefox/* $path/chrome/
+done

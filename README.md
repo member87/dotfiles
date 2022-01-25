@@ -9,6 +9,7 @@ Using [YADM](https://yadm.io/) to manage dotfiles
 - polybar
 - i3 resurect to restore i3 programs and layout
 - alacritty for terminal emulator
+- rofi
 
 ![i3wm setup](https://github.com/member87/dotfiles/blob/main/.config/yadm/media/window_manger.png?raw=true)
 

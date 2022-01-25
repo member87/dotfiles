@@ -1,0 +1,7 @@
+*, *::before, *::after {
+	font-family: Source Code Pro !important;
+}
+
+li div div p a{
+    color: white !important;
+}

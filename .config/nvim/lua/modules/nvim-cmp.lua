@@ -79,7 +79,7 @@ local on_attach = function(client, bufnr)
 end
 
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
-local servers = {'pyright', 'sumneko_lua', 'tsserver', 'vimls', 'bashls', 'java_language_server'}
+local servers = {'pyright', 'sumneko_lua', 'tsserver', 'vimls', 'bashls'}
 
 for _, v in pairs(servers) do
 	require('lspconfig')[v].setup {
@@ -87,12 +87,6 @@ for _, v in pairs(servers) do
 		on_attach = on_attach
 	}
 end
-
-require'lspconfig'.java_language_server.setup {
-	cmd = {"java-language-server"},
-	capabilities = capabilities,
-	on_attach = on_attach
-}
 
 
 

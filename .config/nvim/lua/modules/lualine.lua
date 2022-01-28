@@ -1,6 +1,6 @@
 require('lualine').setup {
 	options = {
-		theme = 'material-nvim',
+		theme = 'vscode',
 		disabled_filetypes = {},
 		component_separators = '',
 		section_separators = '',

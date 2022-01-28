@@ -57,7 +57,7 @@ Plug 'norcalli/nvim-colorizer.lua'
 Plug 'kyazdani42/nvim-tree.lua'
 
 " Theme "
-Plug 'member87/material.nvim'
+Plug 'Mofiqul/vscode.nvim'
 
 " Icons "
 Plug 'kyazdani42/nvim-web-devicons'

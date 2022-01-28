@@ -50,8 +50,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 10
-    y: 10
+    x: 5
+    y: 5 
     # Spread additional padding evenly around the terminal content.
     #dynamic_padding: false
     # Window decorations
@@ -156,10 +156,10 @@ font:
   #
   # Thin strokes are suitable for retina displays, but for non-retina screens
   # it is recommended to set `use_thin_strokes` to `false`.
-  use_thin_strokes: true
+  use_thin_strokes: false
 
 # If `true`, bold text is drawn using the bright color variants.
-draw_bold_text_with_bright_colors: true
+draw_bold_text_with_bright_colors: false
 
 colors:
 
@@ -175,24 +175,24 @@ colors:
     background: '#feffff'
 
   normal:
-    black:   '#282a36'
-    red:     '#ff5c57'
-    green:   '#5af78e'
-    yellow:  '#f3f99d'
-    blue:    '#57c7ff'
-    magenta: '#ff6ac1'
-    cyan:    '#9aedfe'
-    white:   '#f1f1f0'
+    black:   '#1F2229'
+    red:     '#D41919'
+    green:   '#5EBDAB'
+    yellow:  '#FEA44C'
+    blue:    '#367bf0'
+    magenta: '#BF2E5D'
+    cyan:    '#49AEE6'
+    white:   '#E6E6E6'
 
   bright:
-    black:   '#686868'
-    red:     '#ff5c57'
-    green:   '#5af78e'
-    yellow:  '#f3f99d'
-    blue:    '#57c7ff'
-    magenta: '#ff6ac1'
-    cyan:    '#9aedfe'
-    white:   '#eff0eb'
+    black:   '#8C42AB'
+    red:     '#EC0101'
+    green:   '#47D4B9'
+    yellow:  '#FF8A18'
+    blue:    '#277FFF'
+    magenta: '#D71655'
+    cyan:    '#05A1F7'
+    white:   '#FFFFFF'
 
 #selection:
 # This string contains all characters that are used as separators for

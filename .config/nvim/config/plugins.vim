@@ -25,7 +25,10 @@ Plug 'rafamadriz/friendly-snippets'
 
 Plug 'jiangmiao/auto-pairs'
 
-" Norifications
+" Git
+Plug 'tanvirtin/vgit.nvim'
+
+" Notifications
 Plug 'rcarriga/nvim-notify'
 
 " Colors

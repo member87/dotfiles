@@ -50,8 +50,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 10
-    y: 10
+    x: 5
+    y: 5 
     # Spread additional padding evenly around the terminal content.
     #dynamic_padding: false
     # Window decorations
@@ -108,7 +108,7 @@ font:
     family: "Source Code Pro"
 
     # The `style` can be specified to pick a specific face.
-    style: 
+    style: null
     # Bold font face
     #bold:
     # Font family
@@ -156,38 +156,43 @@ font:
   #
   # Thin strokes are suitable for retina displays, but for non-retina screens
   # it is recommended to set `use_thin_strokes` to `false`.
-  use_thin_strokes: true
+  use_thin_strokes: false
 
 # If `true`, bold text is drawn using the bright color variants.
-#draw_bold_text_with_bright_colors: false
-# Colors (Tomorrow Night)
+draw_bold_text_with_bright_colors: false
+
 colors:
-  name: Ivory Dark
-  author: Baskerville
+
   primary:
-    background: "#191919"
-    foreground: "#a4a6ab"
+    background: '#191919'
+    foreground: '#eff0eb'
+
   cursor:
-    text: "#2d2c28"
-    cursor: "#a4a6ab"
+    cursor: '#97979b'
+
+  selection:
+    text:       '#282a36'
+    background: '#feffff'
+
   normal:
-    black: "#5b5955"
-    red: "#c4756e"
-    green: "#559a6a"
-    yellow: "#9b8a4b"
-    blue: "#6a8dca"
-    magenta: "#b577ac"
-    cyan: "#019baa"
-    white: "#dbdde2"
+    black:   '#1F2229'
+    red:     '#D41919'
+    green:   '#5EBDAB'
+    yellow:  '#FEA44C'
+    blue:    '#367bf0'
+    magenta: '#BF2E5D'
+    cyan:    '#49AEE6'
+    white:   '#E6E6E6'
+
   bright:
-    black: "#707277"
-    red: "#f6a299"
-    green: "#82c896"
-    yellow: "#cab775"
-    blue: "#98bbfb"
-    magenta: "#e5a4db"
-    cyan: "#53cad9"
-    white: "#f7f9ff"
+    black:   '#8C42AB'
+    red:     '#EC0101'
+    green:   '#47D4B9'
+    yellow:  '#FF8A18'
+    blue:    '#277FFF'
+    magenta: '#D71655'
+    cyan:    '#05A1F7'
+    white:   '#FFFFFF'
 
 #selection:
 # This string contains all characters that are used as separators for
@@ -655,4 +660,4 @@ colors:
 # Print all received window events.
 #print_events: false
 _events: false
-theme: Baskerville - ivory dark
+theme: Palenight

@@ -15,3 +15,6 @@ end
 alias vim='nvim'
 alias vi='nvim'
 alias ls='exa -F --group-directories-first'
+
+
+starship init fish | source

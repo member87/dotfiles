@@ -24,6 +24,7 @@ Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'rafamadriz/friendly-snippets'
 
 Plug 'jiangmiao/auto-pairs'
+
 " Norifications
 Plug 'rcarriga/nvim-notify'
 

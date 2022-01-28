@@ -1,5 +1,7 @@
-set tabstop=2 sw=2
-set termguicolors
+set autoindent
+set noexpandtab
+set tabstop=2
+set shiftwidth=2
 
 if (has("nvim"))
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1

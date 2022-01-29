@@ -33,9 +33,11 @@ yay -S --needed --removemake --nocleanmenu --nodiffmenu --noconfirm \
 	fish \
 	fisher \
 	gamemode \
+	github-cli \
 	i3-gaps \
 	i3-resurrect \
 	iptables-nft \
+	lazygit-git \
 	lua-language-server \
 	lxappearance \
 	man \
@@ -60,8 +62,10 @@ yay -S --needed --removemake --nocleanmenu --nodiffmenu --noconfirm \
 	scrot \
 	spicetify-cli \
 	spotify \
+	starship \
 	steam \
 	thunar \
+	tmux \
 	virt-manager \
 	w3m \
 	wget \

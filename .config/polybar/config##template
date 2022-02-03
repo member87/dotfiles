@@ -15,13 +15,13 @@ width = 100%
 {% if yadm.class == "Laptop" %}
 height = 50
 dpi = 192
-font-0 = "Source Code Pro:size=11;3"
+font-0 = "RobotoMono Nerd Font:size=11;3"
 font-1 = "Font Awesome 5 Free Solid:style=Solid;4"
 font-2 = "Font Awesome 5 Free Regular:style=Regular;4"
 font-3 = "Font Awesome 5 Brands Regular:style=Regular;4"
 {% else %}
 height = 25
-font-0 = "Source Code Pro:size=10;3"
+font-0 = "RobotoMono Nerd Font:size=10;3"
 font-1 = "Font Awesome 5 Free Solid:style=Solid;3"
 font-2 = "Font Awesome 5 Free Regular:style=Regular;3"
 font-3 = "Font Awesome 5 Brands Regular:style=Regular;3"

@@ -15,15 +15,15 @@ width = 100%
 {% if yadm.class == "Laptop" %}
 height = 50
 dpi = 192
-font-0 = "Font Awesome 5 Free Solid:style=Solid;4"
-font-1 = "Font Awesome 5 Free Regular:style=Regular;4"
-font-2 = "Font Awesome 5 Brands Regular:style=Regular;4"
+font-0 = "Font Awesome 6 Free Solid:style=Solid;4"
+font-1 = "Font Awesome 6 Free Regular:style=Regular;4"
+font-2 = "Font Awesome 6 Brands Regular:style=Regular;4"
 font-3 = "RobotoMono Nerd Font:size=11;3"
 {% else %}
 height = 25
-font-0 = "Font Awesome 5 Free Solid:style=Solid;3"
-font-1 = "Font Awesome 5 Free Regular:style=Regular;3"
-font-2 = "Font Awesome 5 Brands Regular:style=Regular;3"
+font-0 = "Font Awesome 6 Free Solid:style=Solid;3"
+font-1 = "Font Awesome 6 Free Regular:style=Regular;3"
+font-2 = "Font Awesome 6 Brands Regular:style=Regular;3"
 font-3 = "RobotoMono Nerd Font:size=10;3"
 {% endif %}
 
@@ -124,11 +124,11 @@ time = %H:%M
 label = %time%
 label-background = ${colors.background}
 label-padding = 1
+label-font = 4
 
 format-prefix = 
 format-prefix-background = ${colors.background}
 format-prefix-padding = 1
-format-prefix-font = 4
 
 [module/date]
 type = internal/date
@@ -139,6 +139,7 @@ date = %a %d %b
 label = %date%
 label-background = ${colors.background}
 label-padding = 1
+label-font = 4
 
 format-prefix = 
 format-prefix-background = ${colors.background}
@@ -150,9 +151,9 @@ format-prefix-padding = 1
 type = custom/script
 interval = 1
 format = <label>
+label-font = 4
 format-foreground = ${colors.accent}
 format-prefix = 
-format-prefix-font = 4
 format-prefix-margin = 2
 exec = python ~/.config/polybar/scripts/spotify.py -q -f '{artist} {song}'
 
@@ -173,11 +174,13 @@ format-muted = <label-muted>
 
 label-volume-padding = 1
 label-volume-background = ${colors.background}
+label-volume-font = 4
 
 label-muted = muted
 label-muted-padding = 1
 label-muted-background = ${colors.background}
 label-muted-foreground = #aaa
+label-muted-font = 4
 
 
 format-muted-prefix = 
@@ -206,6 +209,7 @@ format-prefix = 
 format-prefix-padding = 1
 format-prefix-font = 2
 format-prefix-background = ${colors.background}
+label-font = 4
 
 
 #######################################################################################################
@@ -221,6 +225,7 @@ format-prefix-padding = 1
 format-prefix-font = 2
 format-prefix-background = ${colors.background}
 label-padding = 1
+label-font = 4
 
 #######################################################################################################
 
@@ -240,6 +245,7 @@ format-connected-prefix = 
 format-connected-prefix-padding = 1
 format-connected-prefix-font = 2
 format-connected-prefix-background = ${colors.background}
+label-connected-font = 4
 
 
 #######################################################################################################
@@ -247,6 +253,7 @@ format-connected-prefix-background = ${colors.background}
 [module/cpu]
 type = internal/cpu
 label = %percentage%%
+label-font = 4
 label-background = ${colors.background} 
 format = <label>
 format-prefix = 

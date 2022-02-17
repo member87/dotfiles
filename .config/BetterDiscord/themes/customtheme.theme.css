@@ -7,66 +7,178 @@
  */
 
 
- :root {
-	--background-primary: #191919;
-	--background-secondary: #191919;
-	--background-tertiary: #262626;
-	--scrollbar-thin-thumb: #339441;
-	--scrollbar-auto-thumb: #339441;
-	--scrollbar-auto-track: #00000000;
-	--brand-experiment: #339441;
-	--interactive-normal: #FFF;
-	--interactive-hover: #FFF;
-	--interactive-active: #FFF;
-	--channeltextarea-background: #262626;
-	--channeltextarea-foregorund: #fff;
-	--background-secondary-alt: #262626;
-	--background-floating: #262626;
-	--background-accent: #339441;
-	--activity-card-background: #1c1d2b;
-	--elevation-low: #00FF00;
-	--background-modifier-selected: #339441;
-	--background-modifier-hover: #3394419c;
-	--background-modifier-active: #339441;
-	--text-muted: #aaa;
-	--background-mentioned: #33944117;
-	--background-mentioned-hover: #3394412e;
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 
+:root {
+  --background-primary: #191919;
+  --background-secondary: #212121;
+  --background-tertiary: #151515;
+  --scrollbar-thin-thumb: #339441;
+  --scrollbar-auto-thumb: #339441;
+  --scrollbar-auto-track: #212121;
+  --brand-experiment: #339441;
+  --interactive-normal: #FFF;
+  --interactive-hover: #FFF;
+  --interactive-active: #FFF;
+  --channeltextarea-background: #262626;
+  --channeltextarea-foregorund: #fff;
+  --background-secondary-alt: #262626;
+  --background-floating: #262626;
+  --background-accent: #339441;
+  --activity-card-background: #1c1d2b;
+  --elevation-low: #00FF00;
+  --background-modifier-selected: #339441;
+  --background-modifier-hover: #3394419c;
+  --background-modifier-active: #339441;
+  --text-muted: #aaa;
+  --background-mentioned: #33944117;
+  --background-mentioned-hover: #3394412e;
+
+  --color: 51, 148, 65;
+  --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+  --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+  --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+  --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+  --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+  --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+  --rs-online-color: #43b581; /* Colour for online status */
+  --rs-idle-color: #faa61a; /* Colour for idle status */
+  --rs-dnd-color: #f04747; /* Colour for dnd status */
+  --rs-offline-color: #636b75; /* Colour for offline status */
+  --rs-streaming-color: #643da7; /* Colour for streaming status */
+  --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+  --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+  --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
 
 }
 
-.unreadPillCapStroke-7rkHbg, #---new-messages-bar > :first-child {
-	color: #339441;
-	fill: #339441;
+.unreadPill-3nEWYM, .divider-IqmEqJ {
+  color: white;
+  fill: #339441;
+  background-color: #339441;
+  border-color: #339441;
 }
-#---new-messages-bar, .unreadPill-2HyYtt {
-	border-color: #339441;
-	background-color: #339441;
-	margin-bottom: 2em !important;
+.unreadPillCapStroke-1nE1Q8 {
+  color: #339441;
+  fill: #339441;
 }
 
 .mentioned-xhSam7:before {
 
-	background-color: #339441;
+  background-color: #339441;
 }
 
 .theme-dark .container-1D34oG, .theme-dark .footer-2gL1pp, .theme-dark .container-2cd8Mz {
-	background-color: #191919;
+  background-color: #191919;
 } 
 
 .theme-dark .root-1gCeng {
-	background-color: #262626
+  background-color: #262626
 }
 
 span.roleColor-rz2vM0::after {
-    content: "";
-    background: currentColor;
-    width: 100%;
-    position: absolute;
-    opacity: 0.11;
-    left: 0;
-    top: 1px;
-    bottom: 1px;
-    border-radius: 10px;
+  content: "";
+  background: currentColor;
+  width: 100%;
+  position: absolute;
+  opacity: 0.11;
+  left: 0;
+  top: 1px;
+  bottom: 1px;
+  border-radius: 10px;
 }
+
+
+.container-32HW5s, 
+.channel-1Shao0 {
+  margin: 0 !important;
+  padding: 0;
+  max-width: 100%;
+}
+
+.selected-3veCBZ {
+  background-color: rgba(51, 148, 65, 0.4) !important;
+}
+
+.interactive-iyXY_x {
+  padding: 1px;
+  margin: 0px;
+  border-radius: 0;
+}
+
+.interactive-iyXY_x:hover {
+  background-color: rgba(51, 148, 65, 0.2);
+}
+
+.selected-3veCBZ::after {
+  content: "";
+  height: 100%;
+  width: 2px;
+  background-color: #339441;
+  position: absolute;
+  left: 0;
+}
+
+.guilds-2JjMmN::after {
+  content: "";
+  width: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #191919;
+}
+
+.guilds-2JjMmN {
+  width: 1px;
+  transition: all 0.2s ease-out;
+}
+
+.guilds-2JjMmN:hover {
+  width: 72px;
+}
+
+.mentioned-Tre-dv:before {
+  background-color: #339441;
+}
+
+.wrapper-1ZcZW- {
+  background-color: rgba(51, 148, 65, 0.4) !important;
+}
+
+.theme-dark .root-g14mjS {
+  background-color: var(--background-primary) !important; 
+}
+
+.theme-dark .footer-31IekZ {
+  background-color: var(--background-secondary) !important; 
+}
+
+#uid_3215 {
+  background-color: var(--background-tertiary);
+}
+
+.content-1gYQeQ {
+  margin: 0;
+  border-radius: 0;
+  background-color: transparent !important;
+}
+
+.selected-2TbFuo {
+  background-color: rgba(51, 148, 65, 0.2) !important;
+}
+
+
+.selected-2TbFuo::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #339441;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
  

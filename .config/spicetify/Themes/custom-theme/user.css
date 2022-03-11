@@ -12,16 +12,14 @@ li div div p a{
 }
 
 .main-trackList-active,
-.main-navBar-navBarLinkActive,
-.main-rootlist-rootlistItemLinkActive {
+.main-navBar-navBarLinkActive {
   background-color: rgba(51, 148, 65, 0.2);
   position: relative;
 }
 
 
 .main-trackList-active::before,
-.main-navBar-navBarLinkActive::before,
-.main-rootlist-rootlistItemLinkActive::before {
+.main-navBar-navBarLinkActive::before {
   content: "";
   position: absolute;
   left: 0;
@@ -41,10 +39,6 @@ li div div p a{
 }
 
 
-.main-rootlist-rootlistItemLinkActive {
-  padding-left: 0.7em;
-}
-
 .os-scrollbar-handle {
   background-color: #339441 !important;
   width: 6px;
@@ -61,8 +55,8 @@ li div div p a{
 }
 
 .Root__now-playing-bar {
-  margin: 0 1em 1em 1em;
-  width: calc(100% - 2em);
+  margin: 0 8em 1em 8em;
+  width: calc(100% - 16em);
   box-shadow: 0px 1px 2px 2px #111;
 }
 
@@ -85,11 +79,18 @@ li div div p a{
   border-radius: 20px;
 }
 
+.main-rootlist-rootlistItem {
+  padding: 0 1em;
+}
 
-.main-navBar-navBar {
-  margin: 1em;
-  padding: 0px;
-  background-color: var(--spice-player);
-  width: calc(100% - 2em);
-  box-shadow: 0px 1px 2px 2px #111;
+.standalone-ellipsis-one-line {
+  padding: 0 0.5em;
+}
+
+.main-contextMenu-menu {
+  background-color: var(--spice-player)
+}
+
+.main-playlistEditDetailsModal-container {
+  background-color: var(--spice-player)
 }

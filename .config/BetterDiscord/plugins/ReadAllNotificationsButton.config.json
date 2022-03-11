@@ -1,0 +1,12 @@
+{
+	"batch": {
+		"guilds": true,
+		"muted": false,
+		"dms": false
+	},
+	"blacklist": [],
+	"general": {
+		"addClearButton": true,
+		"confirmClear": false
+	}
+}

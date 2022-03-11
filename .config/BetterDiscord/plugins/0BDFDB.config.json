@@ -1,0 +1,23 @@
+{
+	"changeLogs": {
+		"BDFDB": "2.1.7",
+		"BetterNsfwTag": "1.2.7",
+		"CreationDate": "1.4.6",
+		"JoinedAtDate": "1.3.3",
+		"LastMessageDate": "1.2.8",
+		"ServerDetails": "1.1.1",
+		"ShowHiddenChannels": "3.0.6"
+	},
+	"choices": {
+		"toastPosition": "right"
+	},
+	"general": {
+		"showToasts": true,
+		"showSupportBadges": true,
+		"useChromium": false
+	},
+	"hashes": {
+		"0BDFDB.data.json": "73615764072d475408816a0a8857482687eb6c38",
+		"0BDFDB.raw.css": "5b4dfd0092eb658a85c3896c5fdab49cf83d0cee"
+	}
+}

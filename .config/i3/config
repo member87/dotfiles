@@ -21,7 +21,6 @@ font pango:Source Code Pro 8
 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen -l blur 
 exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 300 'betterlockscreen -l dimblur' '' --timer 60 'systemctl suspend' '' 
-exec --no-startup-id xinput set-prop 10 "Coordinate Transformation Matrix" .6 0 0 0 .6 0 0 0 1 
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -288,8 +287,13 @@ bindsym $mod+x mode "restore"
 # scratch pad 
 for_window [instance="scratchpad_terminal"] floating enable
 for_window [instance="scratchpad_terminal"] move scratchpad
-for_window [instance="scratchpad_terminal"] resize set 1000 600
+for_window [instance="scratchpad_terminal"] resize set 80 ppt 70 ppt
 exec --no-startup-id alacritty --class scratchpad_terminal
 bindsym $mod+t [instance="scratchpad_terminal"] scratchpad show; [instance="scratchpad_terminal"] move position center
 
 
+for_window [instance="bitwarden"] floating enable
+for_window [instance="bitwarden"] move scratchpad
+for_window [instance="bitwarden"] resize set 80 ppt 70 ppt
+exec --no-startup-id bitwarden-desktop
+bindsym $mod+p [instance="bitwarden"] scratchpad show; [instance="bitwarden"] move position center

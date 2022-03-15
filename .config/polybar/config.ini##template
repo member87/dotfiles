@@ -1,0 +1,263 @@
+[colors]
+background = #90191919
+background-light = #90262626
+foreground = #EEE
+transparent = #00000000
+accent = #339441
+
+######################################################################################################
+
+
+[bar/example]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+
+{% if yadm.class == "Laptop" %}
+height = 50
+dpi = 192
+font-0 = "Font Awesome 6 Free Solid:style=Solid;4"
+font-1 = "Font Awesome 6 Free Regular:style=Regular;4"
+font-2 = "Font Awesome 6 Brands Regular:style=Regular;4"
+font-3 = "RobotoMono Nerd Font:size=11;3"
+{% else %}
+height = 25
+font-0 = "Font Awesome 6 Free Solid:style=Solid;3"
+font-1 = "Font Awesome 6 Free Regular:style=Regular;3"
+font-2 = "Font Awesome 6 Brands Regular:style=Regular;3"
+font-3 = "RobotoMono Nerd Font:size=10;3"
+{% endif %}
+
+radius = 0
+fixed-center = true
+bottom = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+offset-x = 0%
+offset-y = 0%
+
+
+line-size = 5
+line-color = #f00
+
+border-size = 0
+border-color = ${colors.transparent}
+
+padding = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+
+modules-left = i3 spotify
+modules-center =
+modules-right = vpn download cpu memory pulseaudio date time
+
+tray-position = right
+tray-padding = 1
+tray-background = ${colors.background}
+
+wm-restack = i3
+
+
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+
+
+
+###########################################################################################
+
+[module/i3]
+type = internal/i3
+
+; Sort the workspaces by index instead of the default
+; sorting that groups the workspaces by output
+; Default: false
+index-sort = true
+
+
+
+
+format = <label-state> <label-mode>
+
+label-mode = %mode%
+label-mode-padding = 1
+
+
+label-focused = %icon%
+label-focused-foreground = #ffffff
+label-focused-background = ${colors.accent}
+label-focused-padding = 1
+
+label-unfocused = %icon%
+label-unfocused-foreground = #ffffff
+label-unfocused-background = ${colors.background-light}
+label-unfocused-padding = 1
+
+
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;4
+ws-icon-4 = 5;5
+ws-icon-5 = 6;6
+ws-icon-6 = 7;7
+ws-icon-7 = 8;8
+ws-icon-8 = 9;
+ws-icon-9 = 10;
+
+
+
+
+######################################################################################################
+
+
+[module/time]
+type = internal/date
+interval = 1.0
+
+time = %H:%M
+
+label = %time%
+label-background = ${colors.background}
+label-padding = 1
+label-font = 4
+
+format-prefix = 
+format-prefix-background = ${colors.background}
+format-prefix-padding = 1
+
+[module/date]
+type = internal/date
+interval = 1.0
+
+date = %a %d %b
+
+label = %date%
+label-background = ${colors.background}
+label-padding = 1
+label-font = 4
+
+format-prefix = 
+format-prefix-background = ${colors.background}
+format-prefix-padding = 1
+
+######################################################################################################
+
+[module/spotify]
+type = custom/script
+interval = 1
+format = <label>
+label-font = 4
+format-foreground = ${colors.accent}
+format-prefix = 
+format-prefix-margin = 2
+exec = python ~/.config/polybar/scripts/spotify.py -q -f '{artist} {song}'
+
+
+
+######################################################################################################
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
+use-ui-max = true
+
+interval = 5
+
+format-volume = <ramp-volume><label-volume>
+format-muted = <label-muted>
+
+label-volume-padding = 1
+label-volume-background = ${colors.background}
+label-volume-font = 4
+
+label-muted = muted
+label-muted-padding = 1
+label-muted-background = ${colors.background}
+label-muted-foreground = #aaa
+label-muted-font = 4
+
+
+format-muted-prefix = 
+format-muted-prefix-padding = 1
+format-muted-prefix-background = ${colors.background}
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-background = ${colors.background}
+ramp-volume-padding = 1
+
+######################################################################################################
+
+[module/vpn]
+type = custom/script
+label = %output%
+exec = ~/.config/polybar/scripts/vpn.sh
+click-left = nordvpn c
+click-right = nordvpn d
+interval = 5
+format-background = ${colors.background}
+label-padding = 1
+;format-padding-left = 20
+format-prefix = 
+format-prefix-padding = 1
+format-prefix-font = 2
+format-prefix-background = ${colors.background}
+label-font = 4
+
+
+#######################################################################################################
+
+[module/memory]
+type = internal/memory
+label = %percentage_used%%
+label-background = ${colors.background}
+interval = 5
+format = <label>
+format-prefix = 
+format-prefix-padding = 1
+format-prefix-font = 2
+format-prefix-background = ${colors.background}
+label-padding = 1
+label-font = 4
+
+#######################################################################################################
+
+[module/download]
+type = internal/network
+{% if yadm.class == "Laptop" %}
+interface = wlan0
+{% else %}
+interface = eno1
+{% endif %}
+unknown-as-up = true
+format-connected = <label-connected>
+label-connected = %downspeed:%
+label-connected-padding = 1
+label-connected-background = ${colors.background}
+format-connected-prefix = 
+format-connected-prefix-padding = 1
+format-connected-prefix-font = 2
+format-connected-prefix-background = ${colors.background}
+label-connected-font = 4
+
+
+#######################################################################################################
+
+[module/cpu]
+type = internal/cpu
+label = %percentage%%
+label-font = 4
+label-background = ${colors.background} 
+format = <label>
+format-prefix = 
+format-prefix-padding = 1
+format-prefix-font = 2
+format-prefix-background = ${colors.background}
+label-padding = 1

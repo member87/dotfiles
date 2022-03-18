@@ -296,18 +296,22 @@ for_window [instance="scratchpad_terminal"] move scratchpad
 for_window [instance="scratchpad_terminal"] resize set 80 ppt 70 ppt
 exec --no-startup-id alacritty --class scratchpad_terminal
 bindsym $mod+t [instance="scratchpad_terminal"] scratchpad show; [instance="scratchpad_terminal"] move position center
+bindsym $mod+Shift+Control+t exec --no-startup-id alacritty --class scratchpad_terminal
 
 for_window [instance="bitwarden"] floating enable
 for_window [instance="bitwarden"] move scratchpad
 for_window [instance="bitwarden"] resize set 80 ppt 70 ppt
 exec --no-startup-id bitwarden-desktop
 bindsym $mod+p [instance="bitwarden"] scratchpad show; [instance="bitwarden"] move position center
+bindsym $mod+Shift+Control+p exec --no-startup-id bitwarden-desktop
 
 for_window [instance="scratchpad_btop"] floating enable
 for_window [instance="scratchpad_btop"] move scratchpad
 for_window [instance="scratchpad_btop"] resize set 80 ppt 70 ppt
 exec --no-startup-id alacritty --class scratchpad_btop -e btop
 bindsym $mod+b [instance="scratchpad_btop"] scratchpad show; [instance="scratchpad_btop"] move position center
+bindsym $mod+Shift+Control+b exec --no-startup-id alacritty --class scratchpad_btop -e btop
+
 
 
 

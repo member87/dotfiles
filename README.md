@@ -17,8 +17,8 @@ Neovim config files can be found [here](https://github.com/member87/nvim)
 - dunst
 - firefox
 
-![firefox setup](https://github.com/member87/dotfiles/blob/main/.config/yadm/media/firefox.png?raw=true)
-![firefox setup](https://github.com/member87/dotfiles/blob/main/.config/yadm/media/terminal.png?raw=true)
-![firefox setup](https://github.com/member87/dotfiles/blob/main/.config/yadm/media/nvim.png?raw=true)
-![firefox setup](https://github.com/member87/dotfiles/blob/main/.config/yadm/media/rofi.png?raw=true)
+![firefox setup](https://github.com/member87/dotfiles/blob/nightly/.config/yadm/media/firefox.png?raw=true)
+![firefox setup](https://github.com/member87/dotfiles/blob/nightly/.config/yadm/media/terminal.png?raw=true)
+![firefox setup](https://github.com/member87/dotfiles/blob/nightly/.config/yadm/media/nvim.png?raw=true)
+![firefox setup](https://github.com/member87/dotfiles/blob/nightly/.config/yadm/media/rofi.png?raw=true)
 

@@ -1,10 +1,10 @@
 # Table of Contents  
-- [Introduction](https://github.com/member87/dotfiles/edit/nightly/README.md#introduction)
-- [Programs](https://github.com/member87/dotfiles/edit/nightly/README.md#programs)
-- [Installation](https://github.com/member87/dotfiles/edit/nightly/README.md#installation)
-  - [With YADM](https://github.com/member87/dotfiles/edit/nightly/README.md#with-yadm)
-  - [Without YADM](https://github.com/member87/dotfiles/edit/nightly/README.md#without-yadm-not-recommended)
-- [Media](https://github.com/member87/dotfiles/edit/nightly/README.md#media)
+- [Introduction](#introduction)
+- [Programs](#programs)
+- [Installation](#installation)
+  - [With YADM](#with-yadm)
+  - [Without YADM](#without-yadm-not-recommended)
+- [Media](https://github.com/member87/dotfiles/tree/main##media)
 
 # Introduction
 This repository has been created to manage a variety of different config files for my personal Linux computer (I use arch btw). I am currently using [YADM](https://yadm.io/) to manage and generate certain config files. Also, you are able to find my entire neovim config [here](https://github.com/member87/nvim).

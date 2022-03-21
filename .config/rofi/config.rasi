@@ -37,7 +37,6 @@ configuration {
   bg: #191919;
   fg: #ffffff;
   green: #339441;
-  purple: #bd93f9;
 
   background-color: @bg;
   text-color: @fg;

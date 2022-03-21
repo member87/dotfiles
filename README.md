@@ -4,7 +4,7 @@
 - [Installation](#installation)
   - [With YADM](#with-yadm)
   - [Without YADM](#without-yadm-not-recommended)
-- [Media](https://github.com/member87/dotfiles/tree/main##media)
+- [Media](#media)
 
 # Introduction
 This repository has been created to manage a variety of different config files for my personal Linux computer (I use arch btw). I am currently using [YADM](https://yadm.io/) to manage and generate certain config files. Also, you are able to find my entire neovim config [here](https://github.com/member87/nvim).

@@ -52,7 +52,7 @@ module-margin-right = 0
 
 modules-left = i3 spotify
 modules-center =
-modules-right = vpn download cpu memory pulseaudio date time
+modules-right = vpn battery download cpu memory pulseaudio date time
 
 tray-position = right
 tray-padding = 1
@@ -261,3 +261,31 @@ format-prefix-padding = 1
 format-prefix-font = 2
 format-prefix-background = ${colors.background}
 label-padding = 1
+
+
+[module/battery]
+type = internal/battery
+full-at = 99
+low-at = 10
+battery = BAT0
+adapter = AC0
+poll-interval = 10
+time-format = %H:%M
+format-charging = <label-charging>
+format-discharging = <label-discharging>
+label-charging = %percentage%%+
+label-charging-font = 4
+label-charging-padding = 1
+label-discharging = %percentage%%-
+label-discharging-font = 4
+label-discharging-padding = 1
+format-charging-prefix = 
+format-charging-prefix-padding = 1
+format-charging-prefix-font = 2
+format-charging-prefix-background = ${colors.background}
+format-discharging-prefix = 
+format-discharging-prefix-padding = 1
+format-discharging-prefix-font = 2
+format-discharging-prefix-background = ${colors.background}
+
+

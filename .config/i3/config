@@ -83,7 +83,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+l exec betterlockscreen -l dimblur
 
 # start rofi
-bindsym $mod+d exec ~/.config/rofi/bin/launcher_ribbon
+bindsym $mod+d exec rofi -show drun -theme ~/.config/rofi/config.rasi
 
 # kill focused window
 #bindsym $mod+Shift+q exec "i3-msg kill && i3-msg exec ~/scripts/widgets.sh"

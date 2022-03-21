@@ -3,7 +3,7 @@
 - [Programs](https://github.com/member87/dotfiles/edit/nightly/README.md#programs)
 - [Installation](https://github.com/member87/dotfiles/edit/nightly/README.md#installation)
   - [With YADM](https://github.com/member87/dotfiles/edit/nightly/README.md#with-yadm)
-  - [Without YADM](https://github.com/member87/dotfiles/edit/nightly/README.md#without-yadm)
+  - [Without YADM](https://github.com/member87/dotfiles/edit/nightly/README.md#without-yadm-not-recommended)
 - [Media](https://github.com/member87/dotfiles/edit/nightly/README.md#media)
 
 # Introduction

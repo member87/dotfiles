@@ -83,7 +83,12 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+l exec betterlockscreen -l dimblur
 
 # start rofi
+
+{% if yadm.class == "Laptop" %}
 bindsym $mod+d exec rofi -dpi 300 -show drun -theme ~/.config/rofi/config.rasi
+{% else %}
+bindsym $mod+d exec rofi -dpi 300 -show drun -theme ~/.config/rofi/config.rasi
+{% endif %}
 
 # kill focused window
 #bindsym $mod+Shift+q exec "i3-msg kill && i3-msg exec ~/scripts/widgets.sh"

@@ -28,7 +28,7 @@ void main() {
 		color = mix(color, vec3(grain), 0.5);
 		
 		// blend original with new
-		color = mix(pixel, color, 0.03);
+		color = mix(vec3(pixel.r, pixel.g, pixel.b), color, 0.03);
 	
 			
 		gl_FragColor = vec4(color, pixel.a);

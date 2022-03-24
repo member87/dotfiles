@@ -87,7 +87,7 @@ bindsym $mod+l exec betterlockscreen -l dimblur
 {% if yadm.class == "Laptop" %}
 bindsym $mod+d exec rofi -dpi 300 -show drun -theme ~/.config/rofi/config.rasi
 {% else %}
-bindsym $mod+d exec rofi -dpi 300 -show drun -theme ~/.config/rofi/config.rasi
+bindsym $mod+d exec rofi -show drun -theme ~/.config/rofi/config.rasi
 {% endif %}
 
 # kill focused window

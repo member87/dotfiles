@@ -216,7 +216,7 @@ label-font = 4
 
 [module/memory]
 type = internal/memory
-label = %percentage_used%%
+label = %percentage_used:02%%
 label-background = ${colors.background}
 interval = 5
 format = <label>
@@ -238,7 +238,7 @@ interface = eno1
 {% endif %}
 unknown-as-up = true
 format-connected = <label-connected>
-label-connected = %downspeed:%
+label-connected = %downspeed:08%
 label-connected-padding = 1
 label-connected-background = ${colors.background}
 format-connected-prefix = 
@@ -252,7 +252,7 @@ label-connected-font = 4
 
 [module/cpu]
 type = internal/cpu
-label = %percentage%%
+label = %percentage:02%%
 label-font = 4
 label-background = ${colors.background} 
 format = <label>

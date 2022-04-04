@@ -97,6 +97,11 @@ label-unfocused-foreground = #ffffff
 label-unfocused-background = ${colors.background-light}
 label-unfocused-padding = 1
 
+label-urgent = %icon%
+label-urgent-padding = 1
+
+label-visible = %icon%
+label-visible-padding = 1
 
 ws-icon-0 = 1;
 ws-icon-1 = 2;

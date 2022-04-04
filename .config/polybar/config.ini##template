@@ -10,6 +10,7 @@ accent = #339441
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:}
 width = 100%
 
 {% if yadm.class == "Laptop" %}

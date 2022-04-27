@@ -239,6 +239,7 @@ interface = eno1
 unknown-as-up = true
 format-connected = <label-connected>
 label-connected = %downspeed:%
+label-connected-minlen = 9
 label-connected-padding = 1
 label-connected-background = ${colors.background}
 format-connected-prefix = 

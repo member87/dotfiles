@@ -54,7 +54,6 @@ exec "setxkbmap -layout gb"
 
 exec_always --no-startup-id "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
-exec_always --no-startup-id picom --config ~/.config/picom/picom.conf --glx-fshader-win "$(cat ~/.config/picom/shader.glsl)"
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
@@ -94,8 +93,11 @@ bindsym $mod+l exec betterlockscreen -l dimblur
 
 {% if yadm.class == "Laptop" %}
 bindsym $mod+d exec rofi -dpi 300 -show drun -theme ~/.config/rofi/config.rasi
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 {% else %}
 bindsym $mod+d exec rofi -show drun -theme ~/.config/rofi/config.rasi
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf --glx-fshader-win "$(cat ~/.config/picom/shader.glsl)"
+
 {% endif %}
 
 # kill focused window

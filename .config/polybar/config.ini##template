@@ -10,6 +10,7 @@ accent = #339441
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:}
 width = 100%
 
 {% if yadm.class == "Laptop" %}
@@ -97,6 +98,11 @@ label-unfocused-foreground = #ffffff
 label-unfocused-background = ${colors.background-light}
 label-unfocused-padding = 1
 
+label-urgent = %icon%
+label-urgent-padding = 1
+
+label-visible = %icon%
+label-visible-padding = 1
 
 ws-icon-0 = 1;
 ws-icon-1 = 2;
@@ -216,7 +222,7 @@ label-font = 4
 
 [module/memory]
 type = internal/memory
-label = %percentage_used%%
+label = %percentage_used:02%%
 label-background = ${colors.background}
 interval = 5
 format = <label>
@@ -253,7 +259,7 @@ label-connected-font = 4
 
 [module/cpu]
 type = internal/cpu
-label = %percentage%%
+label = %percentage:02%%
 label-font = 4
 label-background = ${colors.background} 
 format = <label>

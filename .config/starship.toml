@@ -78,8 +78,8 @@ right_format = "$cmd_duration"
 disabled = false
 
 [character]
-success_symbol = " [>](bold dimmed white)"
-error_symbol = "[#](bold red) "
+success_symbol = " [>](bold white)"
+error_symbol = "[# >](bold red) "
 
 [cmd_duration]
 min_time = 1
@@ -135,5 +135,10 @@ format = '[$time](fg:245) '
 [[battery.display]]
 threshold = 15
 style = "red"
+
+
+[[battery.display]]
+threshold = 100
+style = "green"
 
 

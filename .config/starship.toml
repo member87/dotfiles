@@ -131,8 +131,6 @@ disabled = false
 [time]
 disabled = false
 format = '[$time](fg:245) '
-time_format = "%T"
-utc_time_offset = "-5"
 
 [[battery.display]]
 threshold = 15

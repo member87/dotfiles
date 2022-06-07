@@ -93,7 +93,7 @@ bindsym $mod+l exec betterlockscreen -l dimblur
 
 {% if yadm.class == "Laptop" %}
 bindsym $mod+d exec rofi -dpi 300 -show drun -theme ~/.config/rofi/config.rasi
-exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
+# exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 exec touchegg
 {% else %}
 bindsym $mod+d exec rofi -show drun -theme ~/.config/rofi/config.rasi

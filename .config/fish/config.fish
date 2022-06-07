@@ -17,4 +17,6 @@ alias vi='nvim'
 alias ls='exa -F --group-directories-first'
 
 
+fish_add_path '/home/jack/.local/share/gem/ruby/3.0.0/bin'
+
 starship init fish | source

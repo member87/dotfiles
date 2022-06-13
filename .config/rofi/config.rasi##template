@@ -35,8 +35,9 @@ configuration {
   spacing: 0;
 
   bg: #191919;
-  fg: #ffffff;
-  green: #339441;
+  fg: #a6adc8;
+  accent: #313244;
+  selected: #f5c2e7;
 
   background-color: @bg;
   text-color: @fg;
@@ -51,7 +52,7 @@ mainbox {
 }
 
 inputbar {
-  background-color: @green;
+  background-color: @accent;
   children: [prompt, entry];
 }
 
@@ -92,5 +93,5 @@ element-text {
 }
 
 element-text selected {
-  text-color: @green;
+  text-color: @selected;
 }

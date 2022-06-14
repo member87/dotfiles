@@ -4,8 +4,8 @@ background-light = #90262626
 foreground = #cdd6f4
 foreground-sub = #9399b2
 transparent = #00000000
-accent = #1e1e2e
-pink = #f38ba8
+accent = #313244
+lavender = #b4befe
 
 ######################################################################################################
 
@@ -91,7 +91,7 @@ label-mode-padding = 1
 
 
 label-focused = %icon%
-label-focused-foreground = ${colors.pink}
+label-focused-foreground = ${colors.lavender}
 label-focused-background = ${colors.accent}
 label-focused-padding = 1
 

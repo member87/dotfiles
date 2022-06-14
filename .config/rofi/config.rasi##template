@@ -87,9 +87,11 @@ element {
 
 element-icon {
 
-  padding: 20px 20px;
 {% if yadm.class == "Laptop" %}
   size: 1.6ch;
+  padding: 20px 20px;
+{% else %}
+  padding: 10px;
 {% endif %}
 
 

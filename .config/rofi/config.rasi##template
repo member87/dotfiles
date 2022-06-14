@@ -58,12 +58,22 @@ inputbar {
 
 entry {
   background-color: inherit;
+
+
+{% if yadm.class == "Laptop" %}
+  padding: 24px 3px;
+{% else %}
   padding: 12px 3px;
+{% endif %}
 }
 
 prompt {
-  background-color: inherit;
+  background-color: @accent;
+{% if yadm.class == "Laptop" %}
+  padding: 20px 30px 20px 20px;
+{% else %}
   padding: 12px;
+{% endif %}
 }
 
 listview {
@@ -77,9 +87,9 @@ element {
 
 element-icon {
 
-  padding: 10px 10px;
+  padding: 20px 20px;
 {% if yadm.class == "Laptop" %}
-  size: 1.8ch;
+  size: 1.6ch;
 {% endif %}
 
 

@@ -294,11 +294,12 @@ format-discharging = <ramp-capacity> <label-discharging>
 label-charging = %percentage%%
 label-charging-font = 4
 label-charging-padding = 1
+label-charging-foreground = ${colors.foreground-sub}
 
 label-discharging = %percentage%%
 label-discharging-font = 4
 label-discharging-padding = 1
-
+label-discharging-foreground = ${colors.foreground-sub}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 

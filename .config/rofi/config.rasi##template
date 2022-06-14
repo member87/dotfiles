@@ -77,18 +77,20 @@ element {
 
 element-icon {
 
+  padding: 10px 10px;
 {% if yadm.class == "Laptop" %}
-  padding: 10px 10px;
   size: 1.8ch;
-{% else %}
-  padding: 10px 10px;
 {% endif %}
 
 
 }
 
 element-text {
+{% if yadm.class == "Laptop" %}
   padding: 10px 0;
+{% else %}
+  padding: 10px 0;
+{% endif %}
   text-color: inherit;
 }
 

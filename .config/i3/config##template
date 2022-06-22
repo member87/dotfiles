@@ -98,6 +98,7 @@ exec touchegg
 {% else %}
 bindsym $mod+d exec rofi -show drun -theme ~/.config/rofi/config.rasi
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf --glx-fshader-win "$(cat ~/.config/picom/shader.glsl)"
+openrgb --startminimized
 {% endif %}
 
 # kill focused window

@@ -19,7 +19,6 @@ font pango:Source Code Pro 8
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
-exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen -l blur 
 exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 300 'betterlockscreen -l dimblur' '' --timer 60 'systemctl suspend' '' 
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
@@ -98,7 +97,7 @@ exec touchegg
 {% else %}
 bindsym $mod+d exec rofi -show drun -theme ~/.config/rofi/config.rasi
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf --glx-fshader-win "$(cat ~/.config/picom/shader.glsl)"
-openrgb --startminimized
+exec openrgb --startminimized
 {% endif %}
 
 # kill focused window
@@ -116,7 +115,7 @@ smart_gaps on
 
 # window colours
 # class                 border  backgr. text    indicator child_border
-client.focused          #f38ba8 #181825 #FFFFFF #11111b   #f5c2e7
+client.focused          #4c4f69 #181825 #FFFFFF #11111b   #4c4f69
 client.focused_inactive #11111b #11111b #ffffff #484e50   #5f676a
 client.unfocused        #1e1e2e #1e1e2e #aaaaaa #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000

@@ -19,8 +19,8 @@ by Miguel Avila
 */
 
 :root {
-  --sfwindow: #191919;
-  --sfsecondary: #262626;
+  --sfwindow: #11111b;
+  --sfsecondary: #1e1e2e;
   --tab-min-height: 12px !important;
 	font-family: RobotoMono Nerd Font !important;
 }

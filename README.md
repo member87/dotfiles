@@ -37,9 +37,9 @@ cp -r .config/* ~/.config/
 ```
 
 # Media
-![firefox setup](https://github.com/member87/dotfiles/blob/nightly/.config/yadm/media/firefox.png?raw=true)
-![firefox setup](https://github.com/member87/dotfiles/blob/nightly/.config/yadm/media/terminal.png?raw=true)
-![firefox setup](https://github.com/member87/dotfiles/blob/nightly/.config/yadm/media/nvim.png?raw=true)
-![firefox setup](https://github.com/member87/dotfiles/blob/nightly/.config/yadm/media/spotify.png?raw=true)
-![firefox setup](https://github.com/member87/dotfiles/blob/nightly/.config/yadm/media/rofi.png?raw=true)
+![firefox setup](.config/yadm/media/firefox.png?raw=true)
+![firefox setup](.config/yadm/media/terminal.png?raw=true)
+![firefox setup](.config/yadm/media/nvim.png?raw=true)
+![firefox setup](.config/yadm/media/spotify.png?raw=true)
+![firefox setup](.config/yadm/media/rofi.png?raw=true)
 

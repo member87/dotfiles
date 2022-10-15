@@ -51,8 +51,8 @@ exec nvidia-settings --load-config-only
 
 exec "setxkbmap -layout gb"
 
-exec_always --no-startup-id "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-
+exec "dbus-update-activation-environment --all"
+exec --no-startup-id "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
@@ -67,9 +67,8 @@ exec_always --no-startup-id ~/.config/i3/scripts/mouse.sh
 # bindsym --release Print exec --no-startup-id "scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/scrot/ && curl -F \"data[image]=@/home/jack/Pictures/scrot/$f\" http://127.0.0.1:3000/images/"
 bindsym --release Print exec --no-startup-id "scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/scrot/ && xclip -selection clipboard -t image/png -i ~/Pictures/scrot/$f'"
 
-
 # Set workspaces
-assign [class="firefox"] 1
+assign [class="librewolf"] 1
 assign [class="discord"] 9
 for_window [class="Spotify"] move container to workspace 10
 

@@ -2,9 +2,9 @@
 
 
 
-if command -v nordvpn &> /dev/null 
+if command -v protonvpn-cli &> /dev/null 
 then
-	if (($(nordvpn status | grep -i disconnected | wc -l) > 0)); 
+	if (($(protonvpn-cli status | grep -i "No active" | wc -l) > 0)); 
 	then
 		CONNECTED="%{F#666}disconnected%{F-}"
 	else

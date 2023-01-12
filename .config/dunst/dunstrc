@@ -24,7 +24,7 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = (100, 300)
+    width = (300, 400)
 
     # The maximum height of a single notification, excluding the frame.
     height = 300
@@ -76,13 +76,13 @@
     separator_height = 2
 
     # Padding between text and separator.
-    padding = 8
+    padding = 12 
 
     # Horizontal padding.
-    horizontal_padding = 8
+    horizontal_padding = 12
 
     # Padding between text and icon.
-    text_icon_padding = 0
+    text_icon_padding = 18
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
@@ -155,7 +155,7 @@
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
-    alignment = left
+    alignment = center
 
     # Vertical alignment of message text and icon.
     # Possible values are "top", "center" and "bottom".

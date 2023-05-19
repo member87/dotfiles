@@ -1,15 +1,12 @@
 #!/bin/sh
 
-
-
 if command -v protonvpn-cli &> /dev/null 
 then
-	if (($(protonvpn-cli status | grep -i "No active" | wc -l) > 0)); 
+	if (($(protonvpn-cli s | grep -i "No active" | wc -l) > 0)); 
 	then
 		CONNECTED="%{F#666}disconnected%{F-}"
 	else
-		IP="$(dig +short myip.opendns.com @resolver1.opendns.com)"
-	        CONNECTED="$IP"
+    CONNECTED=$(protonvpn-cli s | grep "IP" | cut -d ' ' -f3)
 	fi
 else
 	CONNECTED="%{F#666}disconnected%{F-}"

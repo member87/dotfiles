@@ -34,10 +34,10 @@ configuration {
   padding: 0;
   spacing: 0;
 
-  bg: #191919;
+  bg: #11111b;
   fg: #a6adc8;
   accent: #313244;
-  selected: #f5c2e7;
+  selected: #a6e3a1;
 
   background-color: @bg;
   text-color: @fg;

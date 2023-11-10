@@ -22,6 +22,7 @@ error_symbol = "[>](bold red) "
 [cmd_duration]
 min_time = 1
 format = "[$duration]($style)"
+style = "green bold"
 
 [directory]
 format = "[$path]($style)[$lock_symbol]($lock_style) "

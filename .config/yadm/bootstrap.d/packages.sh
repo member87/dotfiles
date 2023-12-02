@@ -21,17 +21,16 @@ yay -S --needed --removemake --nocleanmenu --nodiffmenu --noconfirm \
 	betterlockscreen \
 	bind \
 	btop \
-	cava \
 	discord \
 	dunst \
 	edk2-ovmf \
-	exa \
+	eza \
 	fish \
   librewolf-bin \
 	fisher \
 	gamemode \
 	github-cli \
-	i3-gaps \
+	i3-wm \
 	iptables-nft \
 	man \
 	man-db \
@@ -40,7 +39,7 @@ yay -S --needed --removemake --nocleanmenu --nodiffmenu --noconfirm \
 	ntfs-3g \
 	openssh \
 	pavucontrol \
-	picom-ibhagwan-git \
+  compfy \
 	playerctl \
 	polkit-gnome \
 	polybar \
@@ -62,7 +61,10 @@ yay -S --needed --removemake --nocleanmenu --nodiffmenu --noconfirm \
 	wine-mono \
 	xclip \
 	xidlehook \
-	xss-lock 
+	xss-lock \
+  lxapperance \
+  catppucin-gtk-theme-mocha \
+  ttf-font-awesome \
 
 
 

@@ -166,7 +166,7 @@ label-font = 4
 format-foreground = ${colors.foreground}
 format-prefix = 
 format-prefix-margin = 2
-exec = python ~/.config/polybar/scripts/spotify.sh
+exec = ~/.config/polybar/scripts/spotify.sh
 
 
 

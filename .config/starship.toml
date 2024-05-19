@@ -4,6 +4,8 @@ $hostname\
 $localip\
 $shlvl\
 $directory\
+$git_branch\
+$git_status\
 $vcsh\
 $character"""
 
@@ -13,7 +15,7 @@ palette = "catppuccin_mocha"
 
 
 [line_break]
-disabled = false
+disabled = true
 
 [character]
 success_symbol = " [>](bold mauve)"
@@ -43,15 +45,15 @@ style = "bold green"
 [git_status]
 format ='([\[$all_status$ahead_behind\]]($style))'
 conflicted = "="
-ahead =	"⇡${count} "
-behind = "⇣${count} "
+ahead =	"⇡${count}"
+behind = "⇣${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-untracked = "?${count} "
-stashed = "$${count} "
-modified = "!${count} "
-staged = "+${count} "
-renamed = "»${count} "
-deleted = "✘${count} "
+untracked = "?${count}"
+stashed = "$${count}"
+modified = "!${count}"
+staged = "+${count}"
+renamed = "»${count}"
+deleted = "✘${count}"
 style =	"bold red"
 disabled = false
 

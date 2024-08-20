@@ -60,7 +60,12 @@ by Miguel Avila
   > #tabbrowser-arrowscrollbox
   > .tabbrowser-tab
   > .tab-stack
-  > .tab-background[selected='true'] {
+  > .tab-background[selected='true'],
+#tabbrowser-tabs:not([movingtab]) 
+  > #tabbrowser-arrowscrollbox 
+  > .tabbrowser-tab 
+  > .tab-stack 
+  > .tab-background:is([selected], [multiselected]):-moz-lwtheme{
   background-image: none !important;
   background-color: var(--toolbar-bgcolor) !important;
 }
@@ -83,6 +88,8 @@ by Miguel Avila
 .sidebar-placesTree {
   background-color: var(--sfwindow) !important;
 }
+
+
 
 /* 
 

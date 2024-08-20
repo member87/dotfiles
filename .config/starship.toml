@@ -1,93 +1,34 @@
 format = """
-$time\
 $username\
 $hostname\
 $localip\
 $shlvl\
-$singularity\
-$kubernetes\
 $directory\
-$vcsh\
 $git_branch\
-$git_commit\
-$git_state\
-$git_metrics\
 $git_status\
-$hg_branch\
-$docker_context\
-$package\
-$buf\
-$c\
-$cmake\
-$cobol\
-$container\
-$dart\
-$deno\
-$dotnet\
-$elixir\
-$elm\
-$erlang\
-$golang\
-$haskell\
-$helm\
-$java\
-$julia\
-$kotlin\
-$lua\
-$nim\
-$nodejs\
-$ocaml\
-$perl\
-$php\
-$pulumi\
-$purescript\
-$python\
-$rlang\
-$red\
-$ruby\
-$rust\
-$scala\
-$swift\
-$terraform\
-$vlang\
-$vagrant\
-$zig\
-$nix_shell\
-$conda\
-$spack\
-$memory_usage\
-$aws\
-$gcloud\
-$openstack\
-$azure\
-$env_var\
-$crystal\
-$custom\
-$sudo\
-$line_break\
-$jobs\
-$battery\
-$status\
-$shell\
+$vcsh\
 $character"""
 
 right_format = "$cmd_duration"
 
+palette = "catppuccin_mocha"
+
 
 [line_break]
-disabled = false
+disabled = true
 
 [character]
-success_symbol = " [>](bold white)"
-error_symbol = "[# >](bold red) "
+success_symbol = " [>](bold mauve)"
+error_symbol = "[>](bold red) "
 
 [cmd_duration]
 min_time = 1
 format = "[$duration]($style)"
+style = "green bold"
 
 [directory]
 format = "[$path]($style)[$lock_symbol]($lock_style) "
-style = "bright-green"
+style = "blue"
 truncate_to_repo = true
 truncation_length = 3
 fish_style_pwd_dir_length = 1
@@ -104,15 +45,15 @@ style = "bold green"
 [git_status]
 format ='([\[$all_status$ahead_behind\]]($style))'
 conflicted = "="
-ahead =	"⇡${count} "
-behind = "⇣${count} "
+ahead =	"⇡${count}"
+behind = "⇣${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-untracked = "?${count} "
-stashed = "$${count} "
-modified = "!${count} "
-staged = "+${count} "
-renamed = "»${count} "
-deleted = "✘${count} "
+untracked = "?${count}"
+stashed = "$${count}"
+modified = "!${count}"
+staged = "+${count}"
+renamed = "»${count}"
+deleted = "✘${count}"
 style =	"bold red"
 disabled = false
 
@@ -142,3 +83,30 @@ threshold = 100
 style = "green"
 
 
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"

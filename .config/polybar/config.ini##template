@@ -6,6 +6,7 @@ foreground-sub = #9399b2
 transparent = #00000000
 accent = #313244
 lavender = #b4befe
+surface0 = #313244
 
 ######################################################################################################
 
@@ -92,7 +93,7 @@ label-mode-padding = 1
 
 label-focused = %icon%
 label-focused-foreground = ${colors.lavender}
-label-focused-background = ${colors.accent}
+label-focused-background = ${colors.surface0}
 label-focused-padding = 1
 
 label-unfocused = %icon%
@@ -165,7 +166,7 @@ label-font = 4
 format-foreground = ${colors.foreground}
 format-prefix = 
 format-prefix-margin = 2
-exec = python ~/.config/polybar/scripts/spotify.py -q -f '{artist} {song}'
+exec = ~/.config/polybar/scripts/spotify.sh
 
 
 

@@ -1,7 +1,8 @@
 #!/bin/sh
 
 
-for path in ~/.mozilla/firefox/*-release/; do 
+for path in ~/.librewolf/*-default; do 
+    echo $path
 		mkdir $path/chrome/ 2&>/dev/null
     cp ~/.config/firefox/* $path/chrome/
 done
